@@ -1,0 +1,87 @@
+    
+.head {
+    position: relative;
+    height:100px;
+}
+       
+ .logo{
+     margin-top: 9px;
+     margin-left: 3px;
+     width:200px;
+     height:50px;
+     margin:10px;
+     padding:0px;
+     align-items: center;
+     cursor: pointer;
+}
+
+.hrow {
+    float: right;
+    position: absolute;
+    right: 300px;
+    top: 25px;
+    cursor: pointer;
+
+}
+
+.darkLightModebtn{
+  width:20px;
+  height:20px;
+  margin:10px;
+  padding:0px;
+  cursor: pointer;
+}
+
+    
+
+hr {
+    height: 1px;
+    background-color:#e5e5e5;
+    border: none;    
+}
+
+.nav{
+    padding-top:20px;
+    display: inline;
+    
+  }
+
+  ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+  }
+
+
+  .nav ul li{
+    display: flex;
+    margin-left:35px;
+    cursor: pointer;
+  }
+
+ .nav ul li img{
+    height: 25px;
+    margin: 5px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .nhead{
+      margin-top: 9px;
+      margin-left: 3px;
+  }
+
+ span hr{
+    height: 5px;
+    background-color:#e5e5e5;
+    border: none;  
+    width: 95%;
+  }
+
+ .darkLightModebtn{
+    background-color: black;
+    position: absolute;
+    /* float: right; */
+    right: 263px;
+ } 
+  
