@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/LightDarkMode.css">
     <title>Course</title>
     <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
     <script src="/assets/js/app.js"></script>
@@ -13,17 +14,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.documentElement.setAttribute("data-theme", "light");
+            var themeSwitcher = document.getElementById("theme-switcher");
+            themeSwitcher.onclick = function () {
+                var currentTheme = document.documentElement.getAttribute("data-theme");
+                var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+            }
+        });
+    </script>
+
 </head>
 
 <body>
 
 
-    <div>
-        <table>
+    <div id="headerNav">
+        <table >
             <td> <img src="/assets/icons/wooninjas-logotype.svg" style="padding: 20px;" id="resp">
             </td>
             <td class="hrow">Activity Timeline</td>
-            <td id="tableDataBtn"><img src="/assets/icons/light-mode-icon.svg" alt="" id="darkLightModebtn"></td>
+            <td id="tableDataBtn "><img src="/assets/icons/light-mode-icon.svg" alt="" class="darkLightModebtn" id="theme-switcher"></td>
             </tr>
         </table>
         <hr>
@@ -57,16 +70,16 @@
                     </ul>
                 </div>
                 <div class="subcon" id="SubCon">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>    
-    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>
+
                 </div>
                 <div class="subcon" id="SubCon">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>    
-    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>
+
                 </div>
                 <div class="subcon" id="SubCon">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>    
-    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>
+
                 </div>
             </div>
         </div>
@@ -82,13 +95,12 @@
             "October", "November", "December");
 
         for (var i = 0; i < 12; i++) {
-            if( i == monthName )
-            {
+            if (i == monthName) {
                 CurMonName = months[i]
                 break;
             }
         }
-        document.getElementById("DateNow").innerHTML = CurMonName + ' ' + today.getDate() +', '+ today.getFullYear() ;
+        document.getElementById("DateNow").innerHTML = CurMonName + ' ' + today.getDate() + ', ' + today.getFullYear();
     </script>
 </body>
 
