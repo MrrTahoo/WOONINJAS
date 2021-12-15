@@ -8,17 +8,19 @@
     <link rel=stylesheet href="assets/css/style.css">
     <title>Course</title>
     <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+    <script src="/assets/js/app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 
-    <div >
+    <div>
         <table>
-            <td > <img src="/assets/icons/wooninjas-logotype.svg" style="padding: 20px;" id="resp">
+            <td> <img src="/assets/icons/wooninjas-logotype.svg" style="padding: 20px;" id="resp">
             </td>
             <td class="hrow">Activity Timeline</td>
             <td id="tableDataBtn"><img src="/assets/icons/light-mode-icon.svg" alt="" id="darkLightModebtn"></td>
@@ -28,7 +30,7 @@
     </div>
 
     <div class="nav topnav">
-        <ul id="navlist"> 
+        <ul id="navlist">
             <li><img src="/assets/icons/course-lesson-topic-icon.svg"><span class="nhead"><a href="/index.html"
                         class="active linkp">Course
                     </a></span></li>
@@ -42,16 +44,41 @@
     </div>
     <span>
         <hr></span>
-    <p style="margin: 50px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa itaque ipsum impedit illo
-        fugit dolorum rem iure, quibusdam quisquam reiciendis! Reiciendis, deleniti iste
-        ab non harum dolore magni distinctio optio quibusdam quisquam reiciendis! Reiciendis, deleniti iste dolor sit
-        amet, consectetur adipisicing elit dolor iste Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit. Distinctio voluptatibus nisi blanditiis ipsam ab reprehenderit at,
-        autem reference site about Lorem ipsum ab non harum
-        eaque sequi vel modi consequatur excepturi, in, laborum nostrum placeat sapiente quidem dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore ducimus odio sint natus iusto quaerat, ex et blanditiis delectus totam, quam quae aut impedit omnis ipsum. Ipsum, totam natus!
-    </p>
+    <div id="BackbtnMain">
+        <button id="backBtn"> <img id="backArrow" src="/assets/icons/previous-button-arrow.svg"> Previous</button>
+        <h4 id="DateNow"></h4>
 
-  
+        <div class="container">
+            <div class="act">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var today = new Date();
+        var monthName = today.getMonth();
+        var CurMonName;
+        var months = new Array('January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
+            'October', 'November', 'December');
+
+        for (var i = 0; i < 12; i++) {
+            if( i == monthName )
+            {
+                months[i] = CurMonName;
+                break;
+            }
+        }
+
+        document.getElementById("DateNow").innerHTML = CurMonName + today.getDate() +', '+ today.getFullYear() ;
+    </script>
 </body>
 
 </html>
