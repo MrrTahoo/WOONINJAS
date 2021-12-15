@@ -133,7 +133,23 @@
       align-items: center;
     }
 
+    .SubConsub{
+      list-style-type: none;
+      padding-left: 27px;
+      overflow: hidden;
+    }
+
+    .taskInfo{
+      float: left;
+    }
     #SubCon {}
+
+    #failedIcon {
+      background-color: red;
+      height: 13px;
+      border-radius: 18px;
+      padding: 6px;
+    }
 
     /* STart Media Queries */
     @media screen and (max-width: 600px) {
