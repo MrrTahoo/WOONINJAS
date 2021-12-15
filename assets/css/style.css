@@ -11,7 +11,7 @@
 
 
 
-    #resp{
+    #resp {
       display: flex;
     }
 
@@ -100,8 +100,8 @@
       width: 95%;
     }
 
-    #backBtn{
-      
+    #backBtn {
+
       padding: 8px;
       width: 118px;
       height: 37px;
@@ -111,14 +111,29 @@
       color: white;
       border-style: none;
     }
-    #backArrow{
+
+    #backArrow {
       width: 15px;
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
     }
-    #BackbtnMain{
+
+    #BackbtnMain {
       padding-top: 35px;
       margin-left: 34px;
     }
+
+    .subcon {
+
+      border: 1px solid rgb(131, 131, 131);
+      border-radius: 8px;
+      margin-top: 16px;
+      width: 97%;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+    }
+
+    #SubCon {}
 
     /* STart Media Queries */
     @media screen and (max-width: 600px) {
@@ -130,28 +145,31 @@
         /* float: right; */
         display: block;
       }
-      
+
     }
+
     @media screen and (max-width: 810px) {
-      .hrow{
+      .hrow {
         display: none;
       }
-      
+
     }
 
     @media screen and (max-width: 660px) {
-      #darkLightModebtn{
+      #darkLightModebtn {
         position: relative;
         top: 4px;
         margin-left: 84px;
         width: 67px;
         height: 18px;
       }
-      #navlist{
+
+      #navlist {
         justify-content: center;
         margin-left: -62px;
       }
-      #resp{
+
+      #resp {
         justify-content: center !;
       }
     }

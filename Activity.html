@@ -50,12 +50,21 @@
 
         <div class="container">
             <div class="act">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+                <div class="subcon" id="SubCon">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>    
+                </div>
+                <div class="subcon" id="SubCon">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>    
+    
+                </div>
+                <div class="subcon" id="SubCon">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>    
+    
+                </div>
+                <div class="subcon" id="SubCon">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quo</p>    
+    
+                </div>
             </div>
         </div>
     </div>
@@ -66,18 +75,17 @@
         var today = new Date();
         var monthName = today.getMonth();
         var CurMonName;
-        var months = new Array('January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
-            'October', 'November', 'December');
+        var months = new Array("January", "Febraury", "March", "April", "May", "June", "July", "August", "September",
+            "October", "November", "December");
 
         for (var i = 0; i < 12; i++) {
             if( i == monthName )
             {
-                months[i] = CurMonName;
+                CurMonName = months[i]
                 break;
             }
         }
-
-        document.getElementById("DateNow").innerHTML = CurMonName + today.getDate() +', '+ today.getFullYear() ;
+        document.getElementById("DateNow").innerHTML = CurMonName + ' ' + today.getDate() +', '+ today.getFullYear() ;
     </script>
 </body>
 
