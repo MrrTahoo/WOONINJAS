@@ -39,7 +39,7 @@
       padding: 6px 0px 6px 0px;
       padding-right: -7px;
       cursor: pointer;
-      background-color: rgb(0, 101, 252);
+      background-color: #0984e3;
       position: absolute;
       /* float: right; */
       right: 75px;
@@ -49,10 +49,11 @@
       border-radius: 19px;
     }
 
-    .topnav a.active {
-      color: rgb(0, 101, 252);
-      font-weight: 900;
+    a:hover{
+      color: #0984e3;
+      
     }
+    
 
     hr {
       height: 3px;
@@ -71,7 +72,7 @@
     #navlist {
       display: flex;
       list-style-type: none;
-      padding: 35px 0px 0px 0px;
+      padding: 55px 0px 0px 0px;
     }
 
 
@@ -91,7 +92,7 @@
     .nhead {
       margin-top: 9px;
       margin-left: 3px;
-
+      font-family: 'Bakbak One', cursive !important;
     }
 
     span hr {
@@ -107,7 +108,7 @@
       width: 118px;
       height: 37px;
       border-radius: 8px;
-      background: rgb(0, 101, 252);
+      background: #0984e3;
       font-weight: 900;
       color: white;
       border-style: none;
@@ -123,8 +124,12 @@
       margin-left: 34px;
     }
 
+    #DateNow{
+      padding-top: 25px;
+      font-family: ui-rounded;
+    }
     .subcon {
-
+      
       border: 1px solid rgb(131, 131, 131);
       border-radius: 8px;
       margin-top: 16px;
